@@ -3,7 +3,7 @@ from datetime import datetime as dt
 #import requests as r
 
 host_tmp = 'hosts'
-host_path ='/etc/hosts'
+host_path =r'/etc/hosts'
 redirect = '127.0.0.1'
 
 website_list = ['www.facebook.com','facebook.com']
@@ -32,4 +32,4 @@ while True:
                     file.write(line)
                 file.truncate()
         print('Free time!!!')
-    time.sleep(300)
+    time.sleep(300) #five mins
