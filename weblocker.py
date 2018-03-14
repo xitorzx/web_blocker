@@ -9,7 +9,7 @@ class blocker:
     def __init__(self):
         self.osname = os.name
         self.platform = sys.platform
-
+        self.list = []
     def setpath(self):
         if self.osname == 'posix' and self.platform == 'linux':
             self.host_path = r'/etc/hosts'
@@ -18,3 +18,7 @@ class blocker:
 
     def redrict(self):
         self.redirect = '127.0.0.1'
+    def block_list(self):        
+        self.num = input("Please input the number of website you wanna block:\n")
+        for i in range (int(self.num)):
+            self.list.append()
